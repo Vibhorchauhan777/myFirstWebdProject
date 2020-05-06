@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <title>flight reservation form </title>
+        <style type="text/css">
+
+        body
+        {   background-image: url(beach.jpg);
+            background-size: cover;
+	    	margin: 0px ;
+	    	padding: 0px;
+        }
+
+	    .banner
+		{
+			background-color: rgb(5,3,8);
+			padding-bottom: 1em;
+			color : white;
+			text-align: left;
+	    	margin-left: 0px ;
+	    	padding: 0px;
+
+		}
+
+   		.banner h1 
+   		{
+        font-size: 55px;
+        background-color: rgb(0,0,0);
+        color:#fff;
+        line-height: 1;
+        margin: 0;
+        padding:25px;
+        font: "Times New Roman", Times, serif;
+       
+        text-align: left;
+   		}
+   		
+   		ul
+   		 {
+		  list-style-type: none;
+		  margin: 0px;
+		  padding: 0px;
+		  overflow: hidden;
+		  background-color: rgb(0,0,0);
+		}
+
+		li 
+		{
+		  float: right; 
+
+		}
+
+		li a 
+		{
+		  font: bold 1em Oxygen, Helvetica, Arial, sans-serif;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 18px;
+		}
+
+		
+
+    	nav a:hover,
+    	nav a:focus,
+    	nav a:active
+    	 {
+    	font: bold 1em Oxygen, Helvetica, Arial, sans-serif;
+        color: black;
+        background-color: rgb(180,180,180);
+        border-radius: 6px;
+        transition: background .4s;
+    	}
+
+			
+        </style>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <script type="text/javascript">
+            
+        function validate()     
+        {
+         if( document.flight.Name.value == "" ) 
+             { 
+                alert( "Please provide your name!" ); 
+               document.flight.Name.focus() ; return false;
+             } 
+        if( document.flight.Age.value == "" ) 
+             { 
+                alert( "Please provide your Age!" ); 
+               document.flight.Age.focus() ; return false;
+             } 
+
+        if( document.flight.Address.value == "" ) 
+             { 
+                alert( "Please provide your Address!" ); 
+               document.flight.Address.focus() ; return false;
+             } 
+        if( document.flight.Phone.value == "" ) 
+             { 
+                alert( "Please provide your Phone!" ); 
+               document.flight.Phone.focus() ; return false;
+             } 
+
+        if( document.flight.Email.value == "" ) 
+             { 
+                alert( "Please provide your Email!" ); 
+               document.flight.Email.focus() ; return false;
+             } 
+
+        if( document.flight.num_pass.value == "" ) 
+             { 
+                alert( "Please provide the number of travellers!" ); 
+               document.flight.num_pass.focus() ; return false;
+             } 
+
+        if( document.flight.Date_start.value == "" ) 
+             { 
+                alert( "Please provide your date of departure!" ); 
+               document.flight.Date_start.focus() ; return false;
+             } 
+
+        if( document.flight.Date_end.value == "" ) 
+             { 
+                alert( "Please provide your date of returning!" ); 
+               document.flight.Date_end.focus() ; return false;
+             } 
+
+         if( document.flight.start.value == "" ) 
+             { 
+                alert( "Please provide your departure city!" ); 
+               document.flight.start.focus() ; return false;
+             } 
+
+         if( document.flight.destination.value == "")
+             {  
+                alert("Please provide your destination city!");
+                document.flight.destination.focus() ; return false;
+
+             }
+    }
+
+            
+        </script>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    </head>
+
+    <body bgcolor="white">
+
+	<header role="banner" class="banner banner--home" id="banner" tabindex="-1">
+			<center><h1>Flight Reservation</h1></center>
+	</header>
+		<nav id="menu" tabindex="-1" role="navigation">
+			<ul>
+				<li><a href="Flight reservation.html"><b class="hidden">Home</b></a></li>
+				<li><a href="facts.html"><b class="hidden">Facts</b></a></li>
+				<li><a href="reservation.html"><b class="hidden">Reservations </b></a></li>	
+				<li><a href="airline_chart.html"><b class="hidden">Airline Chart</b></a></li>
+				<li><a href="flight_status.html"><b class="hidden">Airline Status</b></a></li>
+				<li><a href="deals.html"><b class="hidden">Deals</b></a></li>
+				<li><a href="contact.html"><b class="hidden">Contact Us</b></a></li>
+			</ul>
+		</nav>
+    <form name="flight" action="#" method="post" target="_blank" onsubmit="return validate();">
+        <center>
+        <h2><marquee bgcolor="cyan">Flight Reservation Form </marquee> </h2>
+     <table>
+     	 <tr>
+         <td>Name:</td>
+         <td><input type="text" name="Name"></td>
+         </tr>
+         <tr>
+         <td>Age:</td>
+         <td><input type="Number" name="Age"></td>
+         </tr> 
+         <tr>
+         <td>Address:</td>
+         <td><input type="text" nqme="Address"></td>
+         </tr>
+         <tr>
+         <td>Phone number:</td>
+         <td><input type="Number" name="Phone"></td>
+         </tr>
+         <tr>
+         <td>Email id:</td>
+         <td><input type="email" name="Email"></td>
+         </tr>
+         <tr>
+         <td>Number of travellers:</td>
+         <td><input type="Number" name="num_pass"></td>
+         </tr>
+         <tr>
+         <td>Departure date:</td>
+         <td><input type="Date" name="Date_start"></td>
+         </tr>
+         <tr>
+         <td>From:</td>
+         <td><input type="text" name="start"></td>
+         </tr>
+         <tr>
+         <td>To:</td>
+         <td><input type="text" name="destination"></td>
+         <tr>
+         <td>Return Date:</td>
+         <td><input type="Date" name="Date_end"></td>
+         </tr>
+         <tr>
+        <br>
+        <br>  
+        <tr>
+           <td><input type="submit" value="submit"></td>
+           <td><input type="submit" value="Cancel" ></td>
+           </tr>   
+        </table>  
+        </center>
+        </form>
+    </body>
+</html>

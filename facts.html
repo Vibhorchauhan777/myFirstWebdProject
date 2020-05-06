@@ -1,0 +1,241 @@
+<html>
+  <head>
+      <style>
+    body
+        { background-image: url(plane.jpg);
+          background-size: cover;
+
+        margin: 0px ;
+        padding: 0px;
+        }
+
+      .banner
+    {
+      background-color: rgb(5,3,8);
+      padding-bottom: 1em;
+      color : white;
+      text-align: left;
+        margin-left: 0px ;
+        padding: 0px;
+
+    }
+
+      .banner h1 
+      {
+        font-size: 55px;
+        background-color: rgb(0,0,0);
+        color:#fff;
+        line-height: 1;
+        margin: 0;
+        padding:25px;
+        font: "Times New Roman", Times, serif;
+       
+        text-align: left;
+      }
+      
+      ul
+       {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: rgb(0,0,0);
+    }
+
+    li 
+    {
+      float: right; 
+
+    }
+
+    li a 
+    {
+      font: bold 1em Oxygen, Helvetica, Arial, sans-serif;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    
+
+      nav a:hover,
+      nav a:focus,
+      nav a:active
+       {
+      font: bold 1em Oxygen, Helvetica, Arial, sans-serif;
+        color: black;
+        background-color: rgb(180,180,180);
+        border-radius: 6px;
+        transition: background .4s;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      </style>
+
+      <script type="text/javascript">
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+      </script>
+  </head>
+<body>
+<header role="banner" class="banner banner--home" id="banner" tabindex="-1">
+      <center><h1>Flight Reservation</h1></center>
+</header>
+    <nav id="menu" tabindex="-1" role="navigation">
+      <ul>
+				<li><a href="contact.html"><b class="hidden">Contact Us</b></a></li>	
+				<li><a href="deals.html"><b class="hidden">Deals</b></a></li>
+        <li><a href="flight_status.html"><b class="hidden">Airline Status</b></a></li>
+				<li><a href="airline_chart.html"><b class="hidden">Airline Chart</b></a></li>
+				<li><a href="reservation.html"><b class="hidden">Reservations </b></a></li>			
+        <li><a href="facts.html"><b class="hidden">Facts</b></a></li>
+        <li><a href="Flight reservation.html"><b class="hidden">Home</b></a></li>
+                
+      </ul>
+    </nav>
+<!-- Container for the image gallery -->
+ <h1> Most Scenic And Popular Airports In India. Airports have made our lives easier and travel faster. Here is the list of airports in India known for offering the best experiences in 2020.</h1>
+
+<p><h3>
+1. Kushok Bakula Rimpochee Airport, Leh<br>
+2. Srinagar International Airport, Srinagar<br>
+3. Shimla Airport, Shimla<br>
+4. Gaggal Airport, Kangra<br>
+5. Lengpui Airport, Mizoram<br>
+6. Veer Savarkar International Airport, Port Blair<br>
+7. Agatti Airport, Lakshadweep<br>
+8. Indira Gandhi International Airport, Delhi<br>
+9. Rajiv Gandhi International Airport, Hyderabad<br>
+10. Chhatrapati Shivaji International Airport, Mumbai<br>
+11. Chennai International Airport, Chennai<br>
+12. Kempegowda International Airport, Bangalore<br>
+13. Lokpriya Gopinath Bordoloi International Airport, Guwahati<br>
+14. Coimbatore International Airport, Coimbatore<br>
+15. Dabolim Airport, Goa<br>
+16.Kolkata International Airport, Kolkata and more..............<br>
+</h3>
+</p>
+<br>
+<br>
+<p><h5>FACTS ABOUT THE INDIAN AIRPORTS. India, Asia's third largest economy, has 450 airports and airstrips including those managed by the defence services and private companies.Delhi and Mumbai, the two major gateways, account for 49 per cent of total passenger traffic and 33 per cent of total revenue.</h5></p>
+
+</body>
+</html>
